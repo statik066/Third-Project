@@ -1,0 +1,105 @@
+body{
+  background:rgb(50,50,50)
+}
+.fox{
+position: relative;
+  width:200px;
+  height:200px;
+    left: 250px;
+    top: 60px;
+}
+.fox *{
+  position:absolute;
+}
+.f-hear-l{
+      left: 0px;
+    top: 0px;
+    border-style: solid;
+    border-width: 60px 20px 0px 30px;
+    border-color: #e15816 transparent transparent transparent;
+    z-index: 5;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+     -webkit-animation-name: f-hear-a;
+      animation-name: f-hear-a;
+}
+.f-hear-r{
+      left: 70px;
+    top: 0px;
+    border-style: solid;
+    border-width: 60px 30px 0px 20px;
+    border-color: #e15816 transparent transparent transparent;
+    z-index: 5;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+     -webkit-animation-name: f-hear-a;
+      animation-name: f-hear-a;
+}
+.f-head{
+    border-style: solid;
+    border-width: 120px 60px 0 60px;
+    border-color: #ec7137 transparent transparent transparent;
+    z-index: 4;
+}
+.f-neck{
+    left: 10px;
+    border-style: solid;
+    border-width: 198px 50px 0 50px;
+    border-color: white transparent transparent transparent;
+    z-index: 3;
+}
+.f-body{
+    top: 117px;
+    left: 60px;
+   height: 80px;
+    width: 140px;
+    background-color: #ec7137;
+    z-index: 2;
+}
+.f-body2{
+    left: 80px;
+    top: 40px;
+    border-style: solid;
+    border-width: 0px 122px 80px 0px;
+    border-color: transparent transparent #ec7137 transparent;
+    z-index: 2;
+}
+
+.f-tail{
+     left: 180px;
+    top: 70px;
+    border-style: solid;
+    border-width: 130px 30px 0px 30px;
+    -webkit-transform: rotateZ(9deg);
+    transform: rotateZ(9deg);
+    border-color: #ec7137 transparent transparent transparent;
+    z-index: 2;
+}
+.f-tail2{
+     left: 195px;
+    top: 21px;
+    border-style: solid;
+    border-width: 0px 30px 50px 30px;
+    -webkit-transform: rotateZ(9deg);
+    transform: rotateZ(9deg);
+    border-color: transparent transparent white transparent;
+    z-index: 2;
+}
+@-webkit-keyframes f-hear-a{
+    0%{-webkit-transform: rotate3d(1,0,0,0deg);transform: rotate3d(1,0,0,0deg);}
+    29%{border-color: #e15816 transparent transparent transparent;}
+    30%{ border-color: #ec7137 transparent transparent transparent;}
+    100%{-webkit-transform: rotate3d(1,0,0,180deg);transform: rotate3d(1,0,0,180deg); top: -60px; border-color: #ec7137 transparent transparent transparent;}
+    
+}
+@keyframes f-hear-a{
+    0%{-webkit-transform: rotate3d(1,0,0,0deg);transform: rotate3d(1,0,0,0deg);}
+    29%{border-color: #e15816 transparent transparent transparent;}
+    30%{ border-color: #ec7137 transparent transparent transparent;}
+    100%{-webkit-transform: rotate3d(1,0,0,180deg);transform: rotate3d(1,0,0,180deg); top: -60px; border-color: #ec7137 transparent transparent transparent;}
+    
+}
